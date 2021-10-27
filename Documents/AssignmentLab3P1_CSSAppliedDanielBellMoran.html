@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+        <meta charset="utf-8"> <link rel="stylesheet" href="CSSpracticerules.css"> 
+    </meta>
+    </head>
+    <body>
+        <h3>Cartography II<br /> GEOG 5610 <br /> Daniel Bell-Moran <br /> October 25, 2021</h3>
+        <h1>Introduction</h1>
+        <p> Wood pellets fuel is considered to be a valuable tool for climate mitigation.  The fuel source was designated carbon neutral by the European Union in 2009, South Korea in 2012, and Japan in 2020.  As a result, there was a spike in demand for wood pellets from the United States. By 2020, nearly 7.26 million metric tons of wood pellets were exported from the US, representing a roughly one-billion-dollar export market. However, this increase in tree harvesting and pellet production has received considerable pushback from environmental NGOs and southeastern American communities. New production plants have promised economic growth, while activists have highlighted how the ecological impacts and health effects negatively impact rural communities where plants are located. This proposal sets forth a plan for an interactive web map to visualize environmental justice concerns to explore the environmental justice impacts of a set of proposed wood pellet plants in central Arkansas.</p>
+        <ol>
+            <li><i class="heading">Purpose of the map</i> 
+                <p> The study area will be in central Arkansas, with three proposed wood pellet facilities run by Drax. This UK-based power company uses wood pellets to deliver carbon-neutral power to homes across the Atlantic. The three sites are between the Ozark and Ouachita National forest zones. With major urban center Little Rock nearby, the focus will be on these satellite plants' communities. The first data point will be to understand the reported cases of asthma in each census tract. The wood industry had existed in the area long before these plants broke ground. So we need to understand the existing cases and other relevant lung conditions. This variable makes sense as biomass plants in Massachusetts have been shut down after these indicators were fully understood. The next indicator I will look at is average income. Areas selected for pellet mill siting are found in low-income areas. Finally, I will use air quality data to identify Volatile Organic Compound levels (VOC) and Particulate Material (PM2.5) to identify areas that are already at risk. These variables are essential as they show the high environmental health risk associated with wood pellet production.</p></li>
+            <li><i class="heading">Structure of the map</i>
+            <p>The map will show the contiguous United States with state and national borders indicated. For each state and subdivision, zooming capability will allow the user to understand the quantity of pellets produced in that region. An interactive chart within the website will allow users to sort by individual site, seeing expected use capacity. There is also an opportunity to include qualitative data that shows which communities have voiced support or have pushed back against these facilities. </p></li>
+            <li><i class="heading">Data Sources</i>
+                <p>I will draw on several key data sources. First, I will use census data to identify population blocks and other key demographic data. I will then combine federal and state public health and air quality data sets to identify rates of asthma and other illnesses. Finally, I will pull economic data by state to show wood pellet production levels and economic value. For the non-data analytics focused data, I will develop a shapefile of current and proposed wood pellet facilities. Should time permit, I will identify local power generation facilites that use wood pellets to generate electricity. </p>
+                <table>
+                    <tr>
+                      <th>Data Source</th>
+                      <th>Expected Outcome</th>
+                 </tr>
+                    <tr>
+                      <td>US Energy Information Agency</td>
+                      <td><a href="https://www.eia.gov/biofuels/biomass/">Total Biomass Production</a></td>
+                    </tr>
+                    <tr>
+                      <td>US Census</td>
+                      <td><a href="https://data.census.gov/cedsci/"> Demographic Data</a></td>
+                    </tr>
+                    <tr>
+                        <td>Air Quality</td>
+                        <td><a href="https://ephtracking.cdc.gov/download"> Air Quality Data</a></td>
+                      </tr>
+                  </table></li><br>
+            <li><i class="heading">Methodology</i>
+                <p>        I will create generalized points for the proposed sites in Russellville and Leola using the information posted on Drax’s public website. Then, Using local health data, I will join instances of asthma with the census tracts to calculate case density. Using this data, I will use proportional symbols to represent these cases. On another layer, I will show the average income levels around the proposed plants. Finally, I will use a graduated color scheme to show the VOC and PM2.5 levels recorded in each location over the past five years. </p></li>
+            <li><i class="heading">Timeframe</i> 
+                <p> The table below will indicate which steps will be undertaken at which times. The first two weeks of the project will be spent sourcing data from websites like USFS, Global ForestWatch, IEA, and the USA National Census. The next two weeks will be spent processing this data to calculate population density, revenue, and other relevant statisics. I plan to visualize production by both county and congressional district level. I will spend the first half of November tweaking the interactivity design. The final week prior to the submission of the first draft, I will make sure that the web application and visualization pieces are functional on Chrome, Internet Explore, Edge, and Firefox. I plan to share this with Professor Mojica-Myers and another colleague to make sure it is visible on a Mac computer.</p> </li>
+        </ol>
+        <h2>Timeframe</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th colspan="7">Week 1</th>
+                <th colspan="7">Week 2</th>
+                <th colspan="7">Week 3</th> 
+                <th colspan="7">Week 4</th>
+                <th colspan="7">Week 5</th>
+                <th colspan="7">Week 6</th>
+                <th colspan="7">Week 7</th>
+                <th colspan="7">Week 8</th>
+                <th colspan="7">Week 9</th>
+                <th colspan="7">Week 10</th>
+                <th colspan="1">Week 11</th>
+            </tr>
+            <tr>
+                <td>Task</td>
+                <td>October 4</td>
+                <td>October 5</td>
+                <td>October 6</td>
+                <td>October 7</td>
+                <td>October 8</td>
+                <td>October 9</td>
+                <td>October 10</td>
+                <td>October 11</td>
+                <td>October 12</td>
+                <td>October 13</td>
+                <td>October 14</td>
+                <td>October 15</td>
+                <td>October 16</td>
+                <td>October 17</td>
+                <td>October 18</td>
+                <td>October 19</td>
+                <td>October 20</td>
+                <td>October 21</td>
+                <td>October 22</td>
+                <td>October 23</td>
+                <td>October 24</td>
+                <td>October 25</td>
+                <td>October 26</td>
+                <td>October 27</td>
+                <td>October 28</td>
+                <td>October 29</td>
+                <td>October 30</td>
+                <td>October 31</td>
+                <td>November 1</td>
+                <td>November 2</td>
+                <td>November 3</td>
+                <td>November 4</td>
+                <td>November 5</td>
+                <td>November 6</td>
+                <td>November 7</td>
+                <td>November 8</td>
+                <td>November 9</td>
+                <td>November 10</td>
+                <td>November 11</td>
+                <td>November 12</td>
+                <td>November 13</td>
+                <td>November 14</td>
+                <td>November 15</td>
+                <td>November 16</td>
+                <td>November 17</td>
+                <td>November 18</td>
+                <td>November 19</td>
+                <td>November 20</td>
+                <td>November 21</td>
+                <td>November 22</td>
+                <td>November 23</td>
+                <td>November 24</td>
+                <td>November 25</td>
+                <td>November 26</td>
+                <td>November 27</td>
+                <td>November 28</td>
+                <td>November 29</td>
+                <td>November 30</td>
+                <td>December 1</td>
+                <td>December 2</td>
+                <td>December 3</td>
+                <td>December 4</td>
+                <td>December 5</td>
+                <td>December 6</td>
+                <td>December 7</td>
+                <td>December 8</td>
+                <td>December 9</td>
+                <td>December 10</td>
+                <td>December 11</td>
+                <td>December 12</td>
+                <td>December 13</td>
+            </tr>
+            <tr>
+                <td>Data Collection</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>  
+            </tr>
+            <tr>
+                <td>Data Processing</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>  
+            </tr>
+            <tr>
+                <td>Interactivity Design</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td>Map Production</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+                <td class="filled">&nbsp;</td>
+            </tr>
+         </table>
+    </body>
+</html>
+
